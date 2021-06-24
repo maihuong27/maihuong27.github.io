@@ -1,0 +1,176 @@
+$word: white;
+$background: #404a53;
+
+@media all and(min-width: 550px){
+    .body{
+        .container{
+            width: 70%;
+            margin-left: 15%;
+    
+        }
+    }
+    
+}
+
+@media all and(min-width: 770px){
+    .body{
+        .container{
+            width: 95%;
+            margin-left: 2%;
+               
+            .header_title{
+                span{
+                    font-size: 30px !important;
+                }
+            }
+    
+            .content{
+                display: flex;
+                justify-content: space-between;
+                .content_BDS, .content_MKT{
+                    width: 47%;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media all and(min-width: 990px){
+    .body{
+        width: 80%;
+        margin-left: 10%;
+        .container{
+            width: 70%;
+            margin-left: 2%;
+               
+            .header_title{
+                span{
+                    font-size: 30px !important;
+                }
+            }
+    
+            .content{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                .content_BDS, .content_MKT{
+                    width: 47%;
+                }
+            }
+        }
+    }
+    
+}
+.body{
+    .tuyendung_banner{
+        width: 100%;
+    }
+    
+    .container{
+        .header{
+            margin:{
+                top: 30px;
+                left: 10px;
+            }
+            display: flex;
+            .tag_home{
+                color: $word;
+                line-height: 35px;
+                padding: 0 10px;
+                background-color: $background;
+                position: relative;
+                margin-right: 30px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    border: 17px solid;
+                    border-color: transparent transparent transparent $background;
+                }
+            }
+        
+            .tag_resort{
+                color: $word;
+                padding: 0 10px;
+                line-height: 35px;
+                background-color: $background;
+                position: relative;
+                &::after{
+                    
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    border: 17px solid;
+                    border-color: transparent transparent transparent $background;
+                }
+        
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border:{
+                        right: 16px solid $background;
+                        top: 19.5px solid $background;
+                        bottom: 15px solid $background;
+                        left: 17px solid transparent;
+                    }
+                    top: 0;
+                    left: -21%;
+                }
+            }
+        }
+        
+        .header_title{
+            margin-top: 40px;
+            text-align: center;
+            span{
+                font:{
+                    size: 20px;
+                    weight: 700;
+                }
+                color: $background;
+            }
+            .line{
+                width: 200px;
+                height: 4px;
+                background-image: linear-gradient(-70deg,#404a53 50% , #ead188);
+                margin: 20px auto;
+                display: block;
+            }
+        }
+        
+        .content{
+            .content_BDS, .content_MKT{
+                opacity: 1;
+                width: 90%;
+                margin-left: 5%;
+                img{
+                    width: 100%; 
+                }
+                
+                p{
+                    color: $background;
+                    margin-left: 5%;
+                    font:{
+                        size: 15px;
+                        weight: bold;
+                    }
+                }
+                &:hover{
+                    opacity: 0.9;
+                    box-shadow: 0 0 10px gray;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+

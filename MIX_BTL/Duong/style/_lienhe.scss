@@ -1,0 +1,30 @@
+#contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(136, 136, 136,0.1);
+    margin: 2rem 0;
+
+    h4 {
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+    .form-contact {
+        flex-basis: 48%;
+    }
+
+    .info-detail {
+        flex-basis: 48%;
+    }
+  }
+}

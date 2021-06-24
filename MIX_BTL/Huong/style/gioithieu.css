@@ -1,0 +1,380 @@
+@media screen and (min-width: 768px) {
+  .container2, .container3, .container4, .container5 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container2 .content, .container3 .content, .container4 .content, .container5 .content {
+    width: 45%;
+  }
+  .container2 img, .container3 img, .container4 img, .container5 img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container1 {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .container1 p {
+    font-size: 17px !important;
+  }
+  .container1 span {
+    font-size: 35px !important;
+  }
+  .container2, .container3, .container4, .container5 {
+    width: 80%;
+    margin-left: 10% !important;
+    justify-content: space-between;
+  }
+  .container2 .none1, .container3 .none1, .container4 .none1, .container5 .none1 {
+    display: block !important;
+  }
+  .container2 .none2, .container3 .none2, .container4 .none2, .container5 .none2 {
+    display: none;
+  }
+  .container2 .title, .container3 .title, .container4 .title, .container5 .title {
+    font-size: 35px !important;
+  }
+  .container2 p, .container3 p, .container4 p, .container5 p {
+    font-size: 17px !important;
+  }
+  .container6 {
+    width: 40%;
+    margin-left: 30% !important;
+  }
+  .container6 .title {
+    font-size: 35px !important;
+  }
+  .container6 .leader_Vu {
+    margin-right: 30px !important;
+  }
+  .container7 {
+    width: 80%;
+    margin-left: 10% !important;
+  }
+  .container7 .title {
+    font-size: 35px !important;
+  }
+  .container7 .container7__child1 {
+    display: flex;
+    align-items: center;
+  }
+  .container7 .container7__child1 .none2 {
+    display: block !important;
+    width: 50%;
+  }
+  .container7 .container7__child1 .none1 {
+    display: none;
+  }
+  .container7 .container7__child1 .container7__child1-infor {
+    width: 50% !important;
+  }
+  .container7 .container7__child1 .container7__child1-infor .title_child {
+    font-size: 25px !important;
+  }
+  .container7 .container7__child1 .container7__child1-infor p {
+    font-size: 17px !important;
+  }
+  .container7 .container7__child2 {
+    display: flex;
+    align-items: center;
+  }
+  .container7 .container7__child2 .none1 {
+    width: 50% !important;
+    margin-right: 30px !important;
+  }
+  .container7 .container7__child2 .container7__child2-infor {
+    width: 50% !important;
+  }
+  .container7 .container7__child2 .container7__child2-infor .title_child {
+    font-size: 25px !important;
+  }
+  .container7 .container7__child2 .container7__child2-infor p {
+    font-size: 17px !important;
+  }
+}
+
+.tag {
+  margin: 5% 7%;
+  display: flex;
+}
+
+.tag .home {
+  position: relative;
+  display: block;
+  width: 100px;
+  line-height: 35px;
+  background-color: #404a53;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 40px;
+  color: white;
+}
+
+.tag .home::before {
+  content: "";
+  position: absolute;
+  border: 17px solid;
+  border-color: transparent transparent transparent #404a53;
+  top: 0;
+  left: 100%;
+}
+
+.tag .intro {
+  position: relative;
+  width: 80px;
+  line-height: 34px;
+  background-color: #404a53;
+  color: white;
+  z-index: 1;
+}
+
+.tag .intro::before {
+  content: "";
+  position: absolute;
+  border-right: 16px solid #404a53;
+  border-top: 19.5px solid #404a53;
+  border-bottom: 15px solid #404a53;
+  border-left: 17px solid transparent;
+  top: 0;
+  left: -41%;
+}
+
+.tag .intro::after {
+  content: "";
+  position: absolute;
+  border: 17px solid;
+  top: 0;
+  left: 100%;
+  border-color: transparent transparent transparent #404a53;
+}
+
+.container1 {
+  text-align: center;
+}
+
+.container1 span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #404a53;
+}
+
+.container1 .line {
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+  margin: 20px auto;
+  display: block;
+}
+
+.container1 p {
+  color: #404a53;
+  font-size: 14px;
+  font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.hr {
+  background-color: #404a53;
+  height: 4px;
+  margin: 50px 0;
+}
+
+.container2, .container3, .container4, .container5 {
+  margin-left: 20px;
+}
+
+.container2 .none1, .container3 .none1, .container4 .none1, .container5 .none1 {
+  display: none;
+}
+
+.container2 .title, .container3 .title, .container4 .title, .container5 .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #404a53;
+}
+
+.container2 .line, .container3 .line, .container4 .line, .container5 .line {
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+  margin: 20px auto;
+  display: block;
+}
+
+.container2 p, .container3 p, .container4 p, .container5 p {
+  color: #404a53;
+  font-size: 14px;
+  font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.container2 img, .container3 img, .container4 img, .container5 img {
+  max-width: 100%;
+}
+
+.container6 {
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.container6 .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #404a53;
+}
+
+.container6 .line {
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+  margin: 20px auto;
+  display: block;
+}
+
+.container6 .image_leader {
+  display: flex;
+}
+
+.container6 .image_leader .leader_Vu {
+  position: relative;
+  width: 70%;
+}
+
+.container6 .image_leader .leader_Vu #img1 {
+  width: 100%;
+}
+
+.container6 .image_leader .leader_Vu .infor {
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(31, 63, 129, 0.9);
+}
+
+.container6 .image_leader .leader_Vu .infor .name {
+  font-weight: bold;
+  color: white;
+}
+
+.container6 .image_leader .leader_Vu .infor .descri {
+  font-size: 14px;
+  color: white;
+}
+
+@keyframes move_top {
+  0% {
+    top: 80%;
+    height: 25%;
+  }
+  100% {
+    top: 0;
+    height: 100%;
+  }
+}
+
+.container6 .image_leader .leader_Vu:hover .infor {
+  animation-name: move_top;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.container6 .image_leader .leader_Dong {
+  position: relative;
+  width: 70%;
+}
+
+.container6 .image_leader .leader_Dong #img2 {
+  width: 100%;
+}
+
+.container6 .image_leader .leader_Dong .infor {
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(31, 63, 129, 0.9);
+}
+
+.container6 .image_leader .leader_Dong .infor .name {
+  font-weight: bold;
+  color: white;
+}
+
+.container6 .image_leader .leader_Dong .infor .descri {
+  font-size: 14px;
+  color: white;
+}
+
+@keyframes move_top {
+  0% {
+    top: 80%;
+    height: 20%;
+  }
+  100% {
+    top: 0;
+    height: 100%;
+  }
+}
+
+.container6 .image_leader .leader_Dong:hover .infor {
+  animation-name: move_top;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.container7 {
+  margin-left: 20px;
+}
+
+.container7 .title {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #404a53;
+}
+
+.container7 .line {
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+  margin: 20px auto;
+  display: block;
+}
+
+.container7 .container7__child1 .none2, .container7 .container7__child2 .none2 {
+  display: none;
+}
+
+.container7 .container7__child1 img, .container7 .container7__child2 img {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.container7 .container7__child1 .container7__child1-infor .title_child, .container7 .container7__child1 .container7__child2-infor .title_child, .container7 .container7__child2 .container7__child1-infor .title_child, .container7 .container7__child2 .container7__child2-infor .title_child {
+  font-size: 20px;
+  font-weight: 700;
+  color: #404a53;
+}
+
+.container7 .container7__child1 .container7__child1-infor .line_child, .container7 .container7__child1 .container7__child2-infor .line_child, .container7 .container7__child2 .container7__child1-infor .line_child, .container7 .container7__child2 .container7__child2-infor .line_child {
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+  margin: 20px 0;
+  display: block;
+}
+
+.container7 .container7__child1 .container7__child1-infor p, .container7 .container7__child1 .container7__child2-infor p, .container7 .container7__child2 .container7__child1-infor p, .container7 .container7__child2 .container7__child2-infor p {
+  line-height: 14px;
+  color: #404a53;
+  font-size: 14px;
+  font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+/*# sourceMappingURL=gioithieu.css.map */

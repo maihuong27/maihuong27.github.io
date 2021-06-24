@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  grid-gap: 2rem;
+
+  div {
+    flex-basis: 48%;
+
+    p {
+        margin: 0.75rem;
+    }
+  }
+}
+
+.describe {
+    p {
+        margin: 1rem 0;
+    }
+    .fig {
+        text-align: center;
+    }
+    ul {
+        padding-left: 2rem;
+        li {
+            list-style: disc;
+            margin: 1rem 0;
+        }
+    }
+}

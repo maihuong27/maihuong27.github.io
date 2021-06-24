@@ -1,0 +1,36 @@
+@import "config";
+@import "utilities";
+@import "form";
+@import "index";
+@import "lienhe";
+@import "projectDemo";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: #333;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}

@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    margin-left: 10% !important;
+  }
+  .container1 .clarita,
+  .container1 .west_lakes,
+  .container1 .garden,
+  .container1 .lovera,
+  .container1 .verosa {
+    margin-left: 10% !important;
+    width: 80% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #title {
+    font-size: 30px !important;
+  }
+  .header {
+    margin-left: 1% !important;
+  }
+  #option {
+    margin-top: 30px !important;
+    margin-left: 60% !important;
+    margin-bottom: 30px !important;
+  }
+  .container1 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  .container1 .clarita,
+  .container1 .west_lakes,
+  .container1 .garden,
+  .container1 .lovera,
+  .container1 .verosa {
+    width: 48% !important;
+    margin-left: 1% !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  #title {
+    font-size: 30px !important;
+  }
+  .header {
+    margin-left: 3% !important;
+  }
+  #option {
+    margin-top: 30px !important;
+    margin-left: 60% !important;
+    margin-bottom: 30px !important;
+  }
+  .container1 {
+    width: 960px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: 0 auto;
+  }
+  .container1 .clarita,
+  .container1 .west_lakes,
+  .container1 .garden,
+  .container1 .lovera,
+  .container1 .verosa {
+    width: 32% !important;
+    margin-left: 1% !important;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  #title {
+    font-size: 30px !important;
+  }
+  #bietthu_banner {
+    display: flex;
+    width: 1170px !important;
+    margin: 0 auto !important;
+  }
+  .header {
+    margin-left: 15% !important;
+  }
+  #option {
+    margin-top: 30px !important;
+    margin-left: 60% !important;
+    margin-bottom: 30px !important;
+  }
+  .container1 {
+    width: 1160px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: 0 auto;
+  }
+  .container1 .clarita,
+  .container1 .west_lakes,
+  .container1 .garden,
+  .container1 .lovera,
+  .container1 .verosa {
+    width: 32% !important;
+    margin-left: 1% !important;
+  }
+}
+
+#bietthu_banner {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.header .tag_home {
+  color: white;
+  line-height: 35px;
+  padding: 0 10px;
+  background-color: #404a53;
+  position: relative;
+  margin-right: 37px;
+}
+
+.header .tag_home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 17px solid;
+  border-color: transparent transparent transparent #404a53;
+}
+
+.header .tag_resort {
+  color: white;
+  padding: 0 10px;
+  line-height: 35px;
+  background-color: #404a53;
+  position: relative;
+}
+
+.header .tag_resort::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 17px solid;
+  border-color: transparent transparent transparent #404a53;
+}
+
+.header .tag_resort::before {
+  content: "";
+  position: absolute;
+  border-right: 16px solid #404a53;
+  border-top: 19.5px solid #404a53;
+  border-bottom: 15px solid #404a53;
+  border-left: 17px solid transparent;
+  top: 0;
+  left: -40%;
+}
+
+#title {
+  color: #404a53;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#line {
+  margin: 20px auto;
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+}
+
+#option {
+  margin-top: 30px;
+  margin-left: 20%;
+  font-size: 17px;
+  align-items: center;
+  display: flex;
+}
+
+#option select {
+  display: flex;
+  border: none;
+  border-bottom: 1px solid #d59b30;
+  padding: 3px 10px;
+  margin-left: 5px;
+  color: #d59b30;
+  outline: none;
+  font-size: 15px;
+}
+
+#option select option {
+  color: #d59b30 !important;
+  border: none;
+  border-bottom: 1px solid #d59b30;
+}
+
+.container1 {
+  display: block;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.container1 .clarita,
+.container1 .west_lakes,
+.container1 .garden,
+.container1 .lovera,
+.container1 .verosa {
+  margin-top: 20px;
+  margin-left: 1%;
+  width: 98%;
+  border: 1px solid #dfdbdb;
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+.container1 .clarita:hover,
+.container1 .west_lakes:hover,
+.container1 .garden:hover,
+.container1 .lovera:hover,
+.container1 .verosa:hover {
+  box-shadow: 0px 0px 10px #aaa8a8;
+}
+
+.container1 .clarita .img,
+.container1 .west_lakes .img,
+.container1 .garden .img,
+.container1 .lovera .img,
+.container1 .verosa .img {
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 10px;
+}
+
+.container1 .clarita .title,
+.container1 .west_lakes .title,
+.container1 .garden .title,
+.container1 .lovera .title,
+.container1 .verosa .title {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #060653;
+}
+
+.container1 .clarita .host,
+.container1 .west_lakes .host,
+.container1 .garden .host,
+.container1 .lovera .host,
+.container1 .verosa .host {
+  font-weight: bolder;
+  font-size: 17px;
+  color: #1f2224;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.container1 .clarita .price,
+.container1 .west_lakes .price,
+.container1 .garden .price,
+.container1 .lovera .price,
+.container1 .verosa .price {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.container1 .clarita .price_value,
+.container1 .west_lakes .price_value,
+.container1 .garden .price_value,
+.container1 .lovera .price_value,
+.container1 .verosa .price_value {
+  font-weight: bold;
+  color: #1f2224;
+}
+
+.container1 .clarita .address,
+.container1 .west_lakes .address,
+.container1 .garden .address,
+.container1 .lovera .address,
+.container1 .verosa .address {
+  font-size: 17px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=bietthu.css.map */

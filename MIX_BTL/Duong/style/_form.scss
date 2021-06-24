@@ -1,0 +1,56 @@
+.form {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    border: 1px solid $primary-color;
+  }
+
+  input[type="submit"] {
+    font: inherit;
+  }
+}
+
+.container-footer {
+  form {
+    display: flex;
+    background-color: #fff;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+
+    input[type="email"] {
+      font-size: 1rem;
+      outline: none;
+      display: inline-block;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+      border: 1px solid $primary-color;
+    }
+  }
+}
+
+// contact
+#contact-page {
+  .form {
+    &-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin: 0rem 0;
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+$word: white;
+$background: #404a53;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+@media screen and(min-width: 600px) {
+  .header {
+    margin-left: 10% !important;
+  }
+  .container1 {
+    .west_lakes,
+    .garden,
+    .lovera,
+    .vietuc {
+      margin-left: 10% !important;
+      width: 80% !important;
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  #title {
+    font-size: 30px !important;
+  }
+  .header {
+    margin-left: 1% !important;
+  }
+  #option {
+    margin: {
+      top: 30px !important;
+      left: 60% !important;
+      bottom: 30px !important;
+    }
+  }
+  .container1 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    .west_lakes,
+    .garden,
+    .lovera,
+    .vietuc {
+      width: 48% !important;
+      margin-left: 1% !important;
+    }
+  }
+}
+
+@media screen and(min-width: 990px) {
+  #title {
+    font-size: 30px !important;
+  }
+  .header {
+    margin-left: 3% !important;
+  }
+  #option {
+    margin: {
+      top: 30px !important;
+      left: 60% !important;
+      bottom: 30px !important;
+    }
+  }
+  .container1 {
+    width: 960px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: 0 auto;
+    .west_lakes,
+    .garden,
+    .lovera,
+    .vietuc {
+      width: 32% !important;
+      margin-left: 1% !important;
+    }
+  }
+}
+
+@media screen and(min-width: 1170px) {
+  #title {
+    font-size: 30px !important;
+  }
+  #bietthu_banner {
+    display: flex;
+    width: 1170px !important;
+    margin: 0 auto !important;
+  }
+  .header {
+    margin-left: 15% !important;
+  }
+  #option {
+    margin: {
+      top: 30px !important;
+      left: 60% !important;
+      bottom: 30px !important;
+    }
+  }
+  .container1 {
+    width: 1160px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: 0 auto;
+    .west_lakes,
+    .garden,
+    .lovera,
+    .vietuc {
+      width: 32% !important;
+      margin-left: 1% !important;
+    }
+  }
+}
+
+#bietthu_banner {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  margin: {
+    top: 30px;
+    left: 10px;
+  }
+  display: flex;
+  .tag_home {
+    color: $word;
+    line-height: 35px;
+    padding: 0 10px;
+    background-color: $background;
+    position: relative;
+    margin-right: 37px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      border: 17px solid;
+      border-color: transparent transparent transparent $background;
+    }
+  }
+
+  .tag_resort {
+    color: $word;
+    padding: 0 10px;
+    line-height: 35px;
+    background-color: $background;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      border: 17px solid;
+      border-color: transparent transparent transparent $background;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: {
+        right: 16px solid $background;
+        top: 19.5px solid $background;
+        bottom: 15px solid $background;
+        left: 17px solid transparent;
+      }
+      top: 0;
+      left: -40%;
+    }
+  }
+}
+
+#title {
+  color: $background;
+  font: {
+    size: 20px;
+    weight: bold;
+  }
+  text-align: center;
+}
+
+#line {
+  margin: 20px auto;
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+}
+
+#option {
+  margin: {
+    top: 30px;
+    left: 20%;
+  }
+  font-size: 17px;
+  align-items: center;
+  display: flex;
+  select {
+    display: flex;
+    border: none;
+    border-bottom: 1px solid #d59b30;
+    padding: 3px 10px;
+    margin-left: 5px;
+    color: #d59b30;
+    outline: none;
+    font-size: 15px;
+    option {
+      color: #d59b30 !important;
+      border: none;
+      border-bottom: 1px solid #d59b30;
+    }
+  }
+}
+
+.container1 {
+  display: block;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 2rem auto;
+
+  .west_lakes,
+  .garden,
+  .lovera,
+  .vietuc {
+    margin: {
+      top: 20px;
+      left: 1%;
+    }
+    width: 98%;
+    border: 1px solid rgb(223, 219, 219);
+    border-radius: 10px;
+    line-height: 30px;
+    &:hover {
+      box-shadow: 0px 0px 10px rgb(170, 168, 168);
+    }
+    .img {
+      width: 98%;
+      margin: {
+        left: 1%;
+        top: 10px;
+      }
+    }
+
+    .title {
+      margin: 20px;
+      font: {
+        weight: bold;
+        size: 20px;
+      }
+      color: rgb(6, 6, 83);
+    }
+
+    .host {
+      font: {
+        weight: bolder;
+        size: 17px;
+      }
+      color: #1f2224;
+      margin: {
+        top: 30px;
+        left: 20px;
+      }
+    }
+    .price {
+      font-weight: 500;
+      margin-left: 20px;
+    }
+    .price_value {
+      font-weight: bold;
+      color: #1f2224;
+    }
+    .address {
+      font-size: 17px;
+      margin: {
+        left: 20px;
+        bottom: 50px;
+      }
+    }
+  }
+}

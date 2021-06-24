@@ -1,0 +1,143 @@
+@media all and (min-width: 550px) {
+  .body .container {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media all and (min-width: 770px) {
+  .body .container {
+    width: 95%;
+    margin-left: 2%;
+  }
+  .body .container .header_title span {
+    font-size: 30px !important;
+  }
+  .body .container .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .body .container .content .content_BDS, .body .container .content .content_MKT {
+    width: 47%;
+  }
+}
+
+@media all and (min-width: 990px) {
+  .body {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .body .container {
+    width: 70%;
+    margin-left: 2%;
+  }
+  .body .container .header_title span {
+    font-size: 30px !important;
+  }
+  .body .container .content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .body .container .content .content_BDS, .body .container .content .content_MKT {
+    width: 47%;
+  }
+}
+
+.body .tuyendung_banner {
+  width: 100%;
+}
+
+.body .container .header {
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.body .container .header .tag_home {
+  color: white;
+  line-height: 35px;
+  padding: 0 10px;
+  background-color: #404a53;
+  position: relative;
+  margin-right: 30px;
+}
+
+.body .container .header .tag_home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 17px solid;
+  border-color: transparent transparent transparent #404a53;
+}
+
+.body .container .header .tag_resort {
+  color: white;
+  padding: 0 10px;
+  line-height: 35px;
+  background-color: #404a53;
+  position: relative;
+}
+
+.body .container .header .tag_resort::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 17px solid;
+  border-color: transparent transparent transparent #404a53;
+}
+
+.body .container .header .tag_resort::before {
+  content: "";
+  position: absolute;
+  border-right: 16px solid #404a53;
+  border-top: 19.5px solid #404a53;
+  border-bottom: 15px solid #404a53;
+  border-left: 17px solid transparent;
+  top: 0;
+  left: -21%;
+}
+
+.body .container .header_title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.body .container .header_title span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #404a53;
+}
+
+.body .container .header_title .line {
+  width: 200px;
+  height: 4px;
+  background-image: linear-gradient(-70deg, #404a53 50%, #ead188);
+  margin: 20px auto;
+  display: block;
+}
+
+.body .container .content .content_BDS, .body .container .content .content_MKT {
+  opacity: 1;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.body .container .content .content_BDS img, .body .container .content .content_MKT img {
+  width: 100%;
+}
+
+.body .container .content .content_BDS p, .body .container .content .content_MKT p {
+  color: #404a53;
+  margin-left: 5%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.body .container .content .content_BDS:hover, .body .container .content .content_MKT:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 10px gray;
+}
+/*# sourceMappingURL=tuyendung.css.map */
