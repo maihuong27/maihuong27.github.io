@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Contact me</title>
+		<link rel="stylesheet" href="../css/ContactStyle.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="shortcut icon" href="../image/logo.ico" />
+		<script src="../js/contact.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header>
+			<p class="title"><a href="./HomePage.html">Cô Em Trendy</a></p>
+			<div class="hidden-menu">
+				<i class="fa fa-bars"></i>
+			</div>
+			<nav>
+				<div class="menu" id="menu">
+					<div class="item">
+						<a href="./HomePage.html">Home</a>
+					</div>
+					<div class="item"><a href="./FashionPage.html">Fashion</a></div>
+					<div class="item"><a href="./BeautyPage.html">Beauty</a></div>
+					<div class="item"><a href="./LifePage.html">Life</a></div>
+					<div class="item"><a href="./AboutPage.html">About</a></div>
+					<div class="item" style="box-shadow: 0 0.5px black">
+						<a href="./ContactPage.html">Contact</a>
+					</div>
+					<div class="item"><a href="./OrderPage.html">Order</a></div>
+					<div class="contactlogo ins">
+						<a href="https://www.instagram.com/klinhnd/"
+							><i class="fab fa-instagram"></i
+						></a>
+					</div>
+					<div class="contactlogo yt">
+						<a href="https://www.youtube.com/c/C%C3%B4EmTrendy"
+							><i class="fab fa-youtube"></i
+						></a>
+					</div>
+					<div class="contactlogo fb">
+						<a href="https://www.facebook.com/linh.green.58"
+							><i class="fab fa-facebook-f"></i
+						></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="wrapper">
+				<h2>Contact me</h2>
+				<div id="error_message"></div>
+				<form id="myform" onsubmit="return validate();">
+					<div class="input_field">
+						<input type="text" placeholder="Name" id="name" />
+					</div>
+					<div class="input_field">
+						<input type="text" placeholder="Subject" id="subject" />
+					</div>
+					<div class="input_field">
+						<input type="text" placeholder="Phone" id="phone" />
+					</div>
+					<div class="input_field">
+						<input type="text" placeholder="Email" id="email" />
+					</div>
+					<div class="input_field">
+						<textarea placeholder="Message" id="message"></textarea>
+					</div>
+					<div class="btn">
+						<input type="submit" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="menu">
+				<div class="menu-home"><a href="./HomePage.html">Home</a></div>
+				<div class="menu-fashion"><a href="./FashionPage.html">Fashion</a></div>
+				<div class="menu-beauty"><a href="./BeautyPage.html">Beauty</a></div>
+				<div class="menu-life"><a href="./LifePage.html">Life</a></div>
+				<div class="menu-about"><a href="./AboutPage.html">About</a></div>
+			</div>
+			<div class="social-network">
+				<a href="https://www.instagram.com/klinhnd/"
+					><i class="fab fa-instagram"></i
+				></a>
+				<a href="https://www.youtube.com/c/C%C3%B4EmTrendy"
+					><i class="fab fa-youtube"></i
+				></a>
+				<a href="https://www.facebook.com/linh.green.58"
+					><i class="fab fa-facebook-f"></i
+				></a>
+			</div>
+			<div class="copyright">
+				&copy; 2021 Cô Em Trendy. All images copyrighted.
+			</div>
+		</footer>
+	</body>
+	<script>
+		$(document).ready(function () {
+			$(".hidden-menu").click(function () {
+				$("nav").slideToggle();
+			});
+		});
+	</script>
+</html>
