@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, serif;
+}
+
+header {
+	width: 100%;
+	height: 130px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .title {
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+header .title a {
+	text-decoration: none;
+	color: black;
+}
+
+header .title a:hover {
+	cursor: pointer;
+}
+nav {
+	width: 40%;
+}
+header .menu {
+	display: flex;
+	margin-right: 50px;
+	justify-content: space-around;
+}
+
+header .menu .item a {
+	font-size: 17px;
+	text-decoration: none;
+	color: black;
+}
+
+.hidden-menu i {
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+}
+header .menu .item a:hover {
+	cursor: pointer;
+	color: gray;
+}
+
+header .menu .contactlogo a {
+	font-size: 17px;
+	text-decoration: none;
+	color: black;
+}
+
+header .menu .contactlogo a:hover {
+	cursor: pointer;
+	color: gray;
+}
+.hidden-menu {
+	display: none;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.container .items {
+	width: 49%;
+}
+
+.container .items img {
+	width: 100%;
+	height: 340px;
+	object-fit: cover;
+}
+
+.container .items .time {
+	font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+	font-size: 17px;
+	margin-top: 20px;
+}
+
+.container .items .time a {
+	text-decoration: none;
+	color: black;
+}
+
+.container .items .title .title-link {
+	text-decoration: none;
+	color: black;
+}
+
+.container .items .title {
+	font-family: Georgia, serif;
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+.container .items .description {
+	font-family: Georgia, serif;
+	font-size: 15px;
+	margin: 20px 0;
+}
+
+.container .items .read-more {
+	margin-bottom: 70px;
+}
+
+.container .items .read-more a {
+	text-decoration: none;
+	color: red;
+	box-shadow: 0 1px red;
+}
+
+.footer {
+	width: 100%;
+	height: 250px;
+}
+
+.footer .menu {
+	width: 20%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.footer .menu a {
+	color: red;
+	text-decoration: none;
+	box-shadow: 0 1px red;
+}
+
+.footer .social-network {
+	width: 6%;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.footer .social-network a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.footer .social-network a:hover {
+	color: rgb(85, 84, 84);
+}
+
+.footer .copyright {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 16px;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media all and (max-width: 768px) {
+	header {
+		position: relative;
+	}
+	.footer .menu {
+		width: 40%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+	.hidden-menu {
+		display: block;
+		position: absolute;
+		right: 10%;
+	}
+	.hidden-menu a {
+		text-decoration: none;
+		color: black;
+		font-size: 30px;
+	}
+
+	header .menu {
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 82vh;
+		background-color: white;
+		align-items: center;
+	}
+
+	nav {
+		display: none;
+		z-index: 3;
+	}
+
+	header .menu .item a {
+		font-size: 30px;
+	}
+
+	.contactlogo a {
+		font-size: 40px;
+	}
+	.footer .social-network {
+		width: 10vw;
+	}
+}
